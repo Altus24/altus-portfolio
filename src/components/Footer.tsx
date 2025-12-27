@@ -12,7 +12,7 @@ const Footer = () => {
         >
           <p>
             Designed & Built by{" "}
-            <span className="text-primary">Alex Chen</span>
+            <span className="text-primary">Aldana Ingrassia</span>
           </p>
           <p className="flex items-center gap-2">
             <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />

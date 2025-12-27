@@ -28,7 +28,7 @@ const About = () => {
             className="md:col-span-3 space-y-6"
           >
             <p className="text-muted-foreground leading-relaxed">
-              Hi! I'm Alex, a passionate frontend developer who loves turning complex problems 
+              Hi! I'm Aldana, a passionate frontend developer who loves turning complex problems 
               into simple, beautiful, and intuitive designs. My journey in web development 
               started back in 2018, and since then, I've had the privilege of working at 
               <span className="text-primary"> startups</span>, 
@@ -74,7 +74,7 @@ const About = () => {
               <div className="absolute inset-0 bg-primary/20 rounded-lg translate-x-4 translate-y-4 transition-transform group-hover:translate-x-2 group-hover:translate-y-2" />
               <div className="relative overflow-hidden rounded-lg border-2 border-primary/50">
                 <div className="aspect-square bg-gradient-to-br from-cosmic-violet/30 via-cosmic-blue/30 to-cosmic-cyan/30 flex items-center justify-center">
-                  <div className="text-8xl font-display font-bold text-gradient">AC</div>
+                  <div className="text-8xl font-display font-bold text-gradient">AI</div>
                 </div>
                 <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>

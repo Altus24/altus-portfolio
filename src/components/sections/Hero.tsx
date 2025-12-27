@@ -40,7 +40,7 @@ const Hero = () => {
             animate="visible"
             className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-4"
           >
-            <span className="text-gradient">Alex Chen.</span>
+            <span className="text-gradient">Aldana Ingrassia.</span>
           </motion.h1>
 
           <motion.h2

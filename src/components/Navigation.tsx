@@ -62,7 +62,7 @@ const Navigation = () => {
           whileHover={{ scale: 1.05 }}
           data-hover
         >
-          {"<AC />"}
+          {"<AI />"}
         </motion.a>
 
         <div className="hidden md:flex items-center gap-8">
