@@ -16,7 +16,7 @@ const About = () => {
           className="flex items-center gap-4 mb-12"
         >
           <span className="text-primary font-mono">01.</span>
-          <h2 className="text-3xl font-display font-bold">About Me</h2>
+          <h2 className="text-3xl font-display font-bold">Sobre Mí</h2>
           <div className="flex-1 h-px bg-border max-w-xs" />
         </motion.div>
 
@@ -28,22 +28,22 @@ const About = () => {
             className="md:col-span-3 space-y-6"
           >
             <p className="text-muted-foreground leading-relaxed">
-              Hi! I'm Aldana, a passionate frontend developer who loves turning complex problems 
-              into simple, beautiful, and intuitive designs. My journey in web development 
-              started back in 2018, and since then, I've had the privilege of working at 
+              ¡Hola! Soy Aldana, una desarrolladora frontend apasionada que ama convertir problemas 
+              complejos en diseños simples, hermosos e intuitivos. Mi camino en el desarrollo web 
+              comenzó en 2018, y desde entonces, he tenido el privilegio de trabajar en 
               <span className="text-primary"> startups</span>, 
-              <span className="text-accent"> agencies</span>, and 
-              <span className="text-secondary"> large corporations</span>.
+              <span className="text-accent"> agencias</span> y 
+              <span className="text-secondary"> grandes corporaciones</span>.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              My main focus these days is building accessible, inclusive products and 
-              digital experiences. I enjoy creating things that live on the internet, 
-              whether that be websites, applications, or anything in between.
+              Mi enfoque principal actualmente es construir productos accesibles e inclusivos 
+              y experiencias digitales. Disfruto creando cosas que viven en internet, 
+              ya sean sitios web, aplicaciones o cualquier cosa intermedia.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              Here are a few technologies I've been working with recently:
+              Aquí hay algunas tecnologías con las que he estado trabajando recientemente:
             </p>
 
             <ul className="grid grid-cols-2 gap-2 text-sm font-mono">

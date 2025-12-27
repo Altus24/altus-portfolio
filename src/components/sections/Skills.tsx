@@ -16,7 +16,7 @@ const Skills = () => {
       ],
     },
     {
-      title: "Styling",
+      title: "Estilos",
       skills: [
         { name: "Tailwind CSS", level: 95 },
         { name: "CSS/SASS", level: 90 },
@@ -25,7 +25,7 @@ const Skills = () => {
       ],
     },
     {
-      title: "Tools",
+      title: "Herramientas",
       skills: [
         { name: "Git", level: 90 },
         { name: "Figma", level: 85 },
@@ -45,7 +45,7 @@ const Skills = () => {
           className="flex items-center gap-4 mb-16"
         >
           <span className="text-primary font-mono">02.</span>
-          <h2 className="text-3xl font-display font-bold">Skills</h2>
+          <h2 className="text-3xl font-display font-bold">Habilidades</h2>
           <div className="flex-1 h-px bg-border max-w-xs" />
         </motion.div>
 

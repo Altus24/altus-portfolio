@@ -11,14 +11,14 @@ const Footer = () => {
           className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm font-mono text-muted-foreground"
         >
           <p>
-            Designed & Built by{" "}
+            Diseñado y Desarrollado por{" "}
             <span className="text-primary">Aldana Ingrassia</span>
           </p>
           <p className="flex items-center gap-2">
             <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-            Available for work
+            Disponible para trabajar
           </p>
-          <p>© 2024 All rights reserved</p>
+          <p>© 2024 Todos los derechos reservados</p>
         </motion.div>
       </div>
     </footer>

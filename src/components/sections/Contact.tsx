@@ -12,12 +12,12 @@ const Contact = () => {
     { icon: Github, href: "https://github.com", label: "GitHub" },
     { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
     { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-    { icon: Mail, href: "mailto:alex@example.com", label: "Email" },
+    { icon: Mail, href: "mailto:aldana@ejemplo.com", label: "Email" },
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Message sent! I'll get back to you soon.");
+    toast.success("¡Mensaje enviado! Te responderé pronto.");
     setFormData({ name: "", email: "", message: "" });
   };
 
@@ -31,7 +31,7 @@ const Contact = () => {
           className="flex items-center gap-4 mb-16"
         >
           <span className="text-primary font-mono">04.</span>
-          <h2 className="text-3xl font-display font-bold">Get In Touch</h2>
+          <h2 className="text-3xl font-display font-bold">Contacto</h2>
           <div className="flex-1 h-px bg-border max-w-xs" />
         </motion.div>
 
@@ -41,10 +41,11 @@ const Contact = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-display font-bold mb-4">Let's work together</h3>
+            <h3 className="text-2xl font-display font-bold mb-4">Trabajemos juntos</h3>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              I'm currently open to new opportunities and collaborations. Whether you have a 
-              question, a project idea, or just want to say hi, my inbox is always open.
+              Actualmente estoy abierta a nuevas oportunidades y colaboraciones. Ya sea que tengas 
+              una pregunta, una idea de proyecto, o simplemente quieras saludar, mi bandeja de entrada 
+              siempre está abierta.
             </p>
 
             <div className="flex gap-4 mb-8">
@@ -66,11 +67,11 @@ const Contact = () => {
             <div className="glass rounded-lg p-6">
               <p className="text-sm font-mono text-muted-foreground mb-2">Email</p>
               <a
-                href="mailto:alex@example.com"
+                href="mailto:aldana@ejemplo.com"
                 className="text-foreground hover:text-primary transition-colors"
                 data-hover
               >
-                alex@example.com
+                aldana@ejemplo.com
               </a>
             </div>
           </motion.div>
@@ -83,7 +84,7 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-mono text-muted-foreground mb-2">
-                  Name
+                  Nombre
                 </label>
                 <input
                   id="name"
@@ -92,7 +93,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-4 py-3 glass rounded-lg bg-transparent border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors font-mono text-sm"
-                  placeholder="Your name"
+                  placeholder="Tu nombre"
                 />
               </div>
 
@@ -107,13 +108,13 @@ const Contact = () => {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 glass rounded-lg bg-transparent border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors font-mono text-sm"
-                  placeholder="your@email.com"
+                  placeholder="tu@email.com"
                 />
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-mono text-muted-foreground mb-2">
-                  Message
+                  Mensaje
                 </label>
                 <textarea
                   id="message"
@@ -122,7 +123,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-3 glass rounded-lg bg-transparent border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors font-mono text-sm resize-none"
-                  placeholder="Your message..."
+                  placeholder="Tu mensaje..."
                 />
               </div>
 
@@ -134,7 +135,7 @@ const Contact = () => {
                 data-hover
               >
                 <Send size={18} />
-                Send Message
+                Enviar Mensaje
               </motion.button>
             </form>
           </motion.div>

@@ -30,7 +30,7 @@ const Hero = () => {
             animate="visible"
             className="text-primary font-mono text-sm mb-6"
           >
-            Hello, my name is
+            Hola, mi nombre es
           </motion.p>
 
           <motion.h1
@@ -50,7 +50,7 @@ const Hero = () => {
             animate="visible"
             className="text-3xl md:text-5xl lg:text-6xl font-display font-bold text-muted-foreground mb-8"
           >
-            I craft digital experiences.
+            Creo experiencias digitales.
           </motion.h2>
 
           <motion.p
@@ -60,10 +60,10 @@ const Hero = () => {
             animate="visible"
             className="text-muted-foreground max-w-xl text-lg leading-relaxed mb-12"
           >
-            Frontend developer specializing in building exceptional digital experiences. 
-            Currently focused on creating accessible, human-centered products with 
+            Desarrolladora frontend especializada en construir experiencias digitales excepcionales. 
+            Actualmente enfocada en crear productos accesibles y centrados en el usuario con 
             <span className="text-accent"> React</span>, 
-            <span className="text-primary"> TypeScript</span>, and modern web technologies.
+            <span className="text-primary"> TypeScript</span> y tecnologías web modernas.
           </motion.p>
 
           <motion.div
@@ -84,7 +84,7 @@ const Hero = () => {
               className="px-8 py-4 bg-primary text-primary-foreground font-mono text-sm rounded-lg glow-effect hover:shadow-hover transition-all"
               data-hover
             >
-              view my work
+              ver mi trabajo
             </motion.a>
             <motion.a
               href="#contact"
@@ -97,7 +97,7 @@ const Hero = () => {
               className="px-8 py-4 border border-primary text-primary font-mono text-sm rounded-lg hover:bg-primary/10 transition-all"
               data-hover
             >
-              get in touch
+              contáctame
             </motion.a>
           </motion.div>
         </div>
