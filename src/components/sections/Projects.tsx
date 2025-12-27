@@ -8,27 +8,27 @@ const Projects = () => {
 
   const featuredProjects = [
     {
-      title: "E-Commerce Platform",
+      title: "Plataforma E-Commerce",
       description:
-        "A full-featured e-commerce platform built with Next.js, featuring real-time inventory management, Stripe integration, and a headless CMS for content management.",
+        "Una plataforma de comercio electrónico completa construida con Next.js, con gestión de inventario en tiempo real, integración con Stripe y un CMS headless para gestión de contenido.",
       tech: ["Next.js", "TypeScript", "Prisma", "Stripe", "Tailwind"],
       github: "#",
       live: "#",
       image: "ecommerce",
     },
     {
-      title: "AI Dashboard",
+      title: "Dashboard de IA",
       description:
-        "An analytics dashboard for AI/ML models, featuring real-time metrics, model versioning, and interactive visualizations for monitoring model performance.",
+        "Un panel de análisis para modelos de IA/ML, con métricas en tiempo real, versionado de modelos y visualizaciones interactivas para monitorear el rendimiento del modelo.",
       tech: ["React", "D3.js", "Python", "FastAPI", "PostgreSQL"],
       github: "#",
       live: "#",
       image: "dashboard",
     },
     {
-      title: "Social Media App",
+      title: "App de Redes Sociales",
       description:
-        "A real-time social platform with features like live messaging, story sharing, and algorithmic content feed. Built with focus on performance and accessibility.",
+        "Una plataforma social en tiempo real con funciones como mensajería en vivo, compartir historias y feed de contenido algorítmico. Construida con enfoque en rendimiento y accesibilidad.",
       tech: ["React", "Socket.io", "Node.js", "MongoDB", "Redis"],
       github: "#",
       live: "#",
@@ -38,33 +38,33 @@ const Projects = () => {
 
   const otherProjects = [
     {
-      title: "Weather Widget",
-      description: "A beautiful weather widget with location-based forecasts and animated weather icons.",
+      title: "Widget del Clima",
+      description: "Un hermoso widget del clima con pronósticos basados en ubicación e íconos animados.",
       tech: ["React", "OpenWeather API", "CSS"],
     },
     {
-      title: "Task Manager",
-      description: "Kanban-style task management app with drag-and-drop, labels, and team collaboration.",
+      title: "Gestor de Tareas",
+      description: "App de gestión de tareas estilo Kanban con arrastrar y soltar, etiquetas y colaboración en equipo.",
       tech: ["Vue.js", "Vuex", "Firebase"],
     },
     {
-      title: "Portfolio Template",
-      description: "A customizable portfolio template for developers with dark mode and animations.",
+      title: "Plantilla de Portfolio",
+      description: "Una plantilla de portfolio personalizable para desarrolladores con modo oscuro y animaciones.",
       tech: ["Next.js", "Framer Motion", "MDX"],
     },
     {
-      title: "Code Snippet Manager",
-      description: "Save, organize, and share code snippets with syntax highlighting and tags.",
+      title: "Gestor de Snippets",
+      description: "Guarda, organiza y comparte fragmentos de código con resaltado de sintaxis y etiquetas.",
       tech: ["React", "Monaco Editor", "Supabase"],
     },
     {
-      title: "Music Player",
-      description: "A Spotify-inspired music player with playlist management and audio visualizations.",
+      title: "Reproductor de Música",
+      description: "Un reproductor de música inspirado en Spotify con gestión de playlists y visualizaciones de audio.",
       tech: ["React", "Web Audio API", "Zustand"],
     },
     {
-      title: "Blog Platform",
-      description: "A minimalist blogging platform with markdown support and SEO optimization.",
+      title: "Plataforma de Blog",
+      description: "Una plataforma de blog minimalista con soporte markdown y optimización SEO.",
       tech: ["Astro", "MDX", "Tailwind"],
     },
   ];
@@ -79,7 +79,7 @@ const Projects = () => {
           className="flex items-center gap-4 mb-16"
         >
           <span className="text-primary font-mono">03.</span>
-          <h2 className="text-3xl font-display font-bold">Projects</h2>
+          <h2 className="text-3xl font-display font-bold">Proyectos</h2>
           <div className="flex-1 h-px bg-border max-w-xs" />
         </motion.div>
 
@@ -119,7 +119,7 @@ const Projects = () => {
                   index % 2 === 1 ? "md:order-1" : ""
                 }`}
               >
-                <p className="text-primary font-mono text-sm mb-2">Featured Project</p>
+                <p className="text-primary font-mono text-sm mb-2">Proyecto Destacado</p>
                 <h3 className="text-2xl font-display font-bold mb-4">{project.title}</h3>
                 <div className="glass rounded-lg p-6 mb-4">
                   <p className="text-muted-foreground text-sm leading-relaxed">
@@ -167,7 +167,7 @@ const Projects = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="text-center mb-12"
         >
-          <h3 className="text-2xl font-display font-bold">Other Noteworthy Projects</h3>
+          <h3 className="text-2xl font-display font-bold">Otros Proyectos Destacados</h3>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

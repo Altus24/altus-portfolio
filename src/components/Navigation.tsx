@@ -6,11 +6,11 @@ const Navigation = () => {
   const [activeSection, setActiveSection] = useState("home");
 
   const navItems = [
-    { id: "home", label: "home" },
-    { id: "about", label: "about" },
-    { id: "skills", label: "skills" },
-    { id: "projects", label: "projects" },
-    { id: "contact", label: "contact" },
+    { id: "home", label: "inicio" },
+    { id: "about", label: "sobre mí" },
+    { id: "skills", label: "habilidades" },
+    { id: "projects", label: "proyectos" },
+    { id: "contact", label: "contacto" },
   ];
 
   useEffect(() => {
@@ -92,14 +92,14 @@ const Navigation = () => {
         </div>
 
         <motion.a
-          href="mailto:alex@example.com"
+          href="mailto:aldana@ejemplo.com"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
           className="hidden md:block px-4 py-2 border border-primary text-primary text-sm font-mono rounded hover:bg-primary/10 transition-colors"
           data-hover
         >
-          say hello
+          hola
         </motion.a>
       </div>
     </motion.nav>
