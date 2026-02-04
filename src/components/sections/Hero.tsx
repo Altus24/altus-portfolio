@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   const scrollToAbout = () => {
     document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -30,18 +33,45 @@ const Hero = () => {
             animate="visible"
             className="text-primary font-mono text-sm mb-6"
           >
-            Hola, mi nombre es
+            {t("hero.greeting")}
           </motion.p>
 
           <motion.h1
-            custom={1}
-            variants={textVariants}
-            initial="hidden"
-            animate="visible"
-            className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-4"
-          >
-            <span className="text-gradient">Aldana Ingrassia.</span>
-          </motion.h1>
+  className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-4 relative text-gradient "
+  initial={{ opacity: 0, scale: 0.9 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ delay: 0.4, duration: 1.2 }}
+>
+  Aldana Ingrassia.
+
+  {/* Partículas orbitando */}
+  <div className="absolute inset-0 pointer-events-none">
+    {[...Array(12)].map((_, i) => {
+      const angle = (i / 12) * Math.PI * 2;
+      const radius = 120 + (i % 3) * 40;
+      return (
+        <motion.span
+          key={i}
+          className="absolute w-1 h-2 bg-primary rounded-full opacity-100 blur-sm"
+          animate={{
+            x: Math.cos(angle) * radius,
+            y: Math.sin(angle) * radius,
+          }}
+          transition={{
+            duration: 12 + i * 2,
+            repeat: Infinity,
+            ease: "linear",
+            delay: i * 0.3,
+          }}
+          style={{
+            left: "50%",
+            top: "50%",
+          }}
+        />
+      );
+    })}
+  </div>
+</motion.h1>
 
           <motion.h2
             custom={2}
@@ -50,7 +80,7 @@ const Hero = () => {
             animate="visible"
             className="text-3xl md:text-5xl lg:text-6xl font-display font-bold text-muted-foreground mb-8"
           >
-            Creo experiencias digitales.
+            {t("hero.role")}
           </motion.h2>
 
           <motion.p
@@ -60,10 +90,7 @@ const Hero = () => {
             animate="visible"
             className="text-muted-foreground max-w-xl text-lg leading-relaxed mb-12"
           >
-            Desarrolladora frontend especializada en construir experiencias digitales excepcionales. 
-            Actualmente enfocada en crear productos accesibles y centrados en el usuario con 
-            <span className="text-accent"> React</span>, 
-            <span className="text-primary"> TypeScript</span> y tecnologías web modernas.
+            {t("hero.description")}
           </motion.p>
 
           <motion.div
@@ -71,7 +98,7 @@ const Hero = () => {
             variants={textVariants}
             initial="hidden"
             animate="visible"
-            className="flex flex-wrap gap-4"
+            className="flex flex-col md:flex-row items-center gap-4"
           >
             <motion.a
               href="#projects"
@@ -84,7 +111,7 @@ const Hero = () => {
               className="px-8 py-4 bg-primary text-primary-foreground font-mono text-sm rounded-lg glow-effect hover:shadow-hover transition-all"
               data-hover
             >
-              ver mi trabajo
+              {t("hero.viewWork")}
             </motion.a>
             <motion.a
               href="#contact"
@@ -97,7 +124,7 @@ const Hero = () => {
               className="px-8 py-4 border border-primary text-primary font-mono text-sm rounded-lg hover:bg-primary/10 transition-all"
               data-hover
             >
-              contáctame
+              {t("hero.contactMe")}
             </motion.a>
           </motion.div>
         </div>

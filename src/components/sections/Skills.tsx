@@ -1,22 +1,24 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const Skills = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { t } = useTranslation();
 
   const skillCategories = [
     {
-      title: "Frontend",
+      title: t("skills.frontend"),
       skills: [
         { name: "React", level: 95 },
         { name: "TypeScript", level: 90 },
         { name: "Next.js", level: 85 },
-        { name: "Vue.js", level: 75 },
+        { name: "Three.js", level: 75 },
       ],
     },
     {
-      title: "Estilos",
+      title: t("skills.styling"),
       skills: [
         { name: "Tailwind CSS", level: 95 },
         { name: "CSS/SASS", level: 90 },
@@ -25,7 +27,7 @@ const Skills = () => {
       ],
     },
     {
-      title: "Herramientas",
+      title: t("skills.tools"),
       skills: [
         { name: "Git", level: 90 },
         { name: "Figma", level: 85 },
@@ -45,7 +47,7 @@ const Skills = () => {
           className="flex items-center gap-4 mb-16"
         >
           <span className="text-primary font-mono">02.</span>
-          <h2 className="text-3xl font-display font-bold">Habilidades</h2>
+          <h2 className="text-3xl font-display font-bold">{t("skills.title")}</h2>
           <div className="flex-1 h-px bg-border max-w-xs" />
         </motion.div>
 
@@ -63,29 +65,23 @@ const Skills = () => {
                 {category.title}
               </h3>
 
-              <div className="space-y-5">
+              <div className="space-y-4">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skill.name}>
-                    <div className="flex justify-between mb-2">
-                      <span className="text-sm font-mono text-foreground">{skill.name}</span>
-                      <span className="text-sm font-mono text-muted-foreground">{skill.level}%</span>
+                  <motion.div
+                    key={skill.name}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={isInView ? { opacity: 1, x: 0 } : {}}
+                    transition={{
+                      duration: 0.5,
+                      delay: categoryIndex * 0.2 + skillIndex * 0.1,
+                    }}
+                    className="flex items-center py-2 px-3 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary"></div>
+                      <span className="text-sm font-medium text-foreground">{skill.name}</span>
                     </div>
-                    <div className="h-2 bg-muted rounded-full overflow-hidden">
-                      <motion.div
-                        className="h-full rounded-full"
-                        style={{
-                          background: "linear-gradient(90deg, hsl(var(--primary)), hsl(var(--accent)))",
-                        }}
-                        initial={{ width: 0 }}
-                        animate={isInView ? { width: `${skill.level}%` } : {}}
-                        transition={{
-                          duration: 1,
-                          delay: categoryIndex * 0.2 + skillIndex * 0.1 + 0.3,
-                          ease: "easeOut",
-                        }}
-                      />
-                    </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </motion.div>

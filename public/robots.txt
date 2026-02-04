@@ -1,14 +1,46 @@
+# Robots.txt para aldanaingrassia.dev
+# Permite indexación completa del sitio
+
+User-agent: *
+Allow: /
+
+# Permite específicamente a los principales bots
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Bots de redes sociales
 User-agent: Twitterbot
 Allow: /
 
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
+User-agent: LinkedInBot
 Allow: /
+
+# Evita indexación de archivos estáticos innecesarios
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /dist/
+Disallow: /build/
+
+# Sitemap
+Sitemap: https://aldanaingrassia.dev/sitemap.xml
+
+# Crawl-delay para ser amable con el servidor
+Crawl-delay: 1

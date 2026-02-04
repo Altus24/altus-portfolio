@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip">
+      <rect x="0" y="0" width="32" height="32" rx="0"/>
+    </clipPath>
+  </defs>
+  
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDklEQVR4AexUsQrCMBC9KG6iqw4K/Rhx6R84Wfws7egXOAh+jKBDcezqEnlIQNK7pGkFbUnh0eZy7/LyesmAfvxEAdGB6EC/HLgtVhoIuVqcDpT57Fnmcx1S0M718Z0CiNRomhWKWjzgu0R4BFRXTtK95oDM5f2iAPwGADEfggX4CobOd0eAsf162qlPhO7Yzv9fB9C56GBbMcZJejgD+K4D1EE9LtfpgEQi0us3uJLVGOoMFW2qM0SiAKjmCE1j421x5LiiAC7ZxEwTmnGbdyMBbRa0ud0RINnOxXEdA/ZuubHXAXQwR6wbA18RPaR8pwCcBEAi14mDP8mKmZTrFCCRvhmPAqID/XfAd2JeAAAA//8T0l7bAAAABklEQVQDAGCwZEFIUL3YAAAAAElFTkSuQmCC" x="0" y="0" 
+         width="32" height="32" 
+         clip-path="url(#clip)"/>
+</svg>

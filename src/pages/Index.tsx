@@ -1,6 +1,9 @@
 import FloatingElements from "@/components/FloatingElements";
 import Cursor from "@/components/Cursor";
 import Navigation from "@/components/Navigation";
+import ScrollToTop from "@/components/ScrollToTop";
+import SEO from "@/components/SEO";
+import StructuredData from "@/components/StructuredData";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Skills from "@/components/sections/Skills";
@@ -10,12 +13,16 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-cosmic noise relative">
-      <FloatingElements />
-      <Cursor />
-      <Navigation />
-      
-      <main>
+    <>
+      <SEO />
+      <StructuredData />
+      <div className="min-h-screen bg-cosmic noise relative">
+        <FloatingElements />
+        <Cursor />
+        <Navigation />
+        <ScrollToTop />
+
+        <main>
         <Hero />
         <About />
         <Skills />
@@ -23,8 +30,9 @@ const Index = () => {
         <Contact />
       </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 };
 
