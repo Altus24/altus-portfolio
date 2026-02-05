@@ -37,22 +37,7 @@ const About = () => {
               {t("about.description2")}
             </p>
 
-            <ul className="grid grid-cols-2 gap-2 text-sm font-mono">
-              {["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Node.js", "React"].map(
-                (tech, i) => (
-                  <motion.li
-                    key={tech}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={isInView ? { opacity: 1, x: 0 } : {}}
-                    transition={{ delay: 0.4 + i * 0.1 }}
-                    className="flex items-center gap-2 text-muted-foreground"
-                  >
-                    <span className="text-primary">▹</span>
-                    {tech}
-                  </motion.li>
-                )
-              )}
-            </ul>
+            
           </motion.div>
 
           {/* <motion.div
