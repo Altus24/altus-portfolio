@@ -24,7 +24,7 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="container mx-auto px-6 py-32">
+      <div className="container mx-auto ">
         <div className="max-w-4xl">
           <motion.p
             custom={0}
@@ -42,7 +42,7 @@ const Hero = () => {
   animate={{ opacity: 1, scale: 1 }}
   transition={{ delay: 0.4, duration: 1.2 }}
 >
-  Aldana Ingrassia.
+  {t("hero.name")}.
 
   {/* Partículas orbitando */}
   <div className="absolute inset-0 pointer-events-none">
@@ -78,11 +78,10 @@ const Hero = () => {
             variants={textVariants}
             initial="hidden"
             animate="visible"
-            className="text-3xl md:text-5xl lg:text-6xl font-display font-bold text-muted-foreground mb-8"
+            className="text-3xl md:text-5xl lg:text-6xl font-display font-bold text-primary mb-8"
           >
             {t("hero.role")}
           </motion.h2>
-
           <motion.p
             custom={3}
             variants={textVariants}
@@ -139,7 +138,7 @@ const Hero = () => {
         className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
         data-hover
       >
-        <span className="text-xs font-mono">scroll</span>
+        <span className="text-xs font-mono">{t("hero.scroll")}</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}

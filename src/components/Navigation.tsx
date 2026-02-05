@@ -87,7 +87,7 @@ const Navigation = () => {
           whileHover={{ scale: 1.05 }}
           data-hover
         >
-          {"<AI />"}
+          {"<Altus />"}
         </motion.a>
 
         {/* Desktop Navigation */}

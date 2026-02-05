@@ -9,7 +9,7 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="about" className="py-32 relative" ref={ref}>
+    <section id="about" className=" relative" ref={ref}>
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -35,10 +35,6 @@ const About = () => {
 
             <p className="text-muted-foreground leading-relaxed">
               {t("about.description2")}
-            </p>
-
-            <p className="text-muted-foreground leading-relaxed">
-              {t("about.description3")}
             </p>
 
             <ul className="grid grid-cols-2 gap-2 text-sm font-mono">

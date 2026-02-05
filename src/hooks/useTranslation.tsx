@@ -5,9 +5,8 @@ const translations = {
   es: {
     about: {
       title: "Sobre mí",
-      description1: "Soy un desarrollador full-stack apasionado por crear experiencias digitales excepcionales. Me especializo en tecnologías modernas como React, Next.js y Node.js, siempre buscando la combinación perfecta entre funcionalidad y diseño elegante.",
+      description1: "Soy una desarrolladora full-stack apasionada por crear experiencias digitales excepcionales. Me especializo en tecnologías modernas como React, Next.js y Node.js, siempre buscando la combinación perfecta entre funcionalidad y diseño elegante.",
       description2: "Mi enfoque se centra en escribir código limpio, mantenible y escalable. Creo en la importancia de la colaboración y el aprendizaje continuo, manteniéndome al día con las últimas tendencias tecnológicas.",
-      description3: "Cuando no estoy programando, me gusta explorar nuevas tecnologías, contribuir a proyectos open source y compartir conocimientos con la comunidad desarrolladora."
     },
     nav: {
       home: "Inicio",
@@ -47,12 +46,13 @@ const translations = {
     },
     hero: {
       greeting: "Hola, soy",
-      name: "Tu Nombre",
-      role: "Desarrollador Full-Stack",
-      description: "Creo experiencias digitales excepcionales",
+      name: "Aldana Ingrassia",
+      role: "Desarrolladora Full Stack",
+      description: "Creo experiencias digitales. Creo interfaces intuitivas y escalables usando React, Next.js y diseño UX/UI. Enfocada en resolver problemas creativamente, con skills en QA y accesibilidad.",
       cta: "Descargar CV",
       viewWork: "Ver mi trabajo",
-      contactMe: "Contáctame"
+      contactMe: "Contáctame",
+      scroll: "scroll"
     }
   },
   en: {
@@ -100,12 +100,13 @@ const translations = {
     },
     hero: {
       greeting: "Hi, I'm",
-      name: "Your Name",
+      name: "Aldana Ingrassia",
       role: "Full-Stack Developer",
-      description: "I create exceptional digital experiences",
+      description: "I create digital experiences. I create intuitive and scalable interfaces using React, Next.js and UX/UI design. Focused on solving problems creatively, with skills in QA and accessibility.",
       cta: "Download CV",
       viewWork: "View my work",
-      contactMe: "Contact me"
+      contactMe: "Contact me",
+      scroll: "scroll"
     }
   }
 };

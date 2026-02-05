@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 
 const Footer = () => {
+  // Obtenemos el año actual dinámicamente
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="py-8 border-t border-border">
       <div className="container mx-auto px-6">
@@ -14,11 +17,9 @@ const Footer = () => {
             Diseñado y Desarrollado por{" "}
             <span className="text-primary">Aldana Ingrassia</span>
           </p>
-          <p className="flex items-center gap-2">
-            <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-            Disponible para trabajar
-          </p>
-          <p>© 2024 Todos los derechos reservados</p>
+          
+          {/* Aquí usamos la variable dinámica */}
+          <p>© {currentYear} Todos los derechos reservados</p>
         </motion.div>
       </div>
     </footer>
