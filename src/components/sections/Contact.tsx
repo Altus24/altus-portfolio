@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Mail, Github, Linkedin, Twitter, Send } from "lucide-react";
+import { Mail, Github, Linkedin, Twitter, Send, MessageCircle } from "lucide-react";
 import { toast } from "sonner";
 import { useTranslation } from "@/hooks/useTranslation";
 
@@ -15,6 +15,7 @@ const Contact = () => {
     { icon: Linkedin, href: "https://www.linkedin.com/in/aldanaingrassia/", label: "LinkedIn" },
     // { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
     { icon: Mail, href: "mailto:aldu.ing@gmail.com", label: "Email" },
+    { icon: MessageCircle, href: `https://wa.me/5492616541624?text=${t("contact.whatsappIconMessage")}`, label: "WhatsApp", external: true },
   ];
 
   const handleSubmit = (e: React.FormEvent) => {

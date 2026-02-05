@@ -7,6 +7,7 @@ const translations = {
       title: "Sobre mí",
       description1: "Soy una desarrolladora full-stack apasionada por crear experiencias digitales excepcionales. Me especializo en tecnologías modernas como React, Next.js y Node.js, siempre buscando la combinación perfecta entre funcionalidad y diseño elegante.",
       description2: "Mi enfoque se centra en escribir código limpio, mantenible y escalable. Creo en la importancia de la colaboración y el aprendizaje continuo, manteniéndome al día con las últimas tendencias tecnológicas.",
+      description3: "Cuando no estoy programando, me gusta explorar nuevas tecnologías, contribuir a proyectos open source y compartir conocimientos con la comunidad desarrolladora."
     },
     nav: {
       home: "Inicio",
@@ -18,7 +19,7 @@ const translations = {
     contact: {
       title: "Contacto",
       subtitle: "Trabajemos juntos",
-      description: "Siempre abierta a nuevas oportunidades y colaboraciones. Ya sea que tengas una pregunta, una idea de proyecto, o simplemente quieras saludar, mi bandeja de entrada siempre está abierta.",
+      description: "Actualmente estoy abierta a nuevas oportunidades y colaboraciones. Ya sea que tengas una pregunta, una idea de proyecto, o simplemente quieras saludar, mi bandeja de entrada siempre está abierta.",
       name: "Nombre",
       email: "Email",
       message: "Mensaje",
@@ -26,9 +27,15 @@ const translations = {
       sending: "Enviando...",
       successMessage: "¡Redirigiendo a WhatsApp! Tu mensaje se enviará automáticamente.",
       emailLabel: "Email",
+      whatsappLabel: "WhatsApp",
       namePlaceholder: "Tu nombre",
       emailPlaceholder: "tu@email.com",
-      messagePlaceholder: "Tu mensaje..."
+      messagePlaceholder: "Tu mensaje...",
+      whatsappMessagePrefix: "Nuevo mensaje desde el portfolio",
+      whatsappMessageName: "Nombre:",
+      whatsappMessageEmail: "Email:",
+      whatsappMessageContent: "Mensaje:",
+      whatsappIconMessage: "Hola%20Aldana!%20Vi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20contactarte."
     },
     skills: {
       title: "Habilidades",
@@ -80,9 +87,11 @@ const translations = {
       sending: "Sending...",
       successMessage: "Redirecting to WhatsApp! Your message will be sent automatically.",
       emailLabel: "Email",
+      whatsappLabel: "WhatsApp",
       namePlaceholder: "Your name",
       emailPlaceholder: "your@email.com",
-      messagePlaceholder: "Your message..."
+      messagePlaceholder: "Your message...",
+      whatsappIconMessage: "Hi%20Aldana!%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20contact%20you."
     },
     skills: {
       title: "Skills",

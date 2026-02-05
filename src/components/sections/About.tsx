@@ -22,12 +22,12 @@ const About = () => {
           <div className="flex-1 h-px bg-border max-w-xs" />
         </motion.div>
 
-        <div className="grid md:grid-cols-5 gap-12">
+        <div className="flex flex-col md:flex-row gap-12 items-start md:items-center">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="md:col-span-3 space-y-6"
+            className="space-y-6 order-2 md:order-1 md:flex-1 max-w-2xl"
           >
             <p className="text-muted-foreground leading-relaxed">
               {t("about.description1")}
@@ -37,25 +37,32 @@ const About = () => {
               {t("about.description2")}
             </p>
 
+            <p className="text-muted-foreground leading-relaxed">
+              {t("about.description3")}
+            </p>
+
             
           </motion.div>
 
-          {/* <motion.div
+          <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="md:col-span-2"
+            className="order-1 md:order-2 md:flex-shrink-0"
           >
-            <div className="relative group" data-hover>
+            <div className="relative group max-w-sm mx-auto md:mx-0" data-hover>
               <div className="absolute inset-0 bg-primary/20 rounded-lg translate-x-4 translate-y-4 transition-transform group-hover:translate-x-2 group-hover:translate-y-2" />
               <div className="relative overflow-hidden rounded-lg border-2 border-primary/50">
-                <div className="aspect-square bg-gradient-to-br from-cosmic-violet/30 via-cosmic-blue/30 to-cosmic-cyan/30 flex items-center justify-center">
-                  <div className="text-8xl font-display font-bold text-gradient">AI</div>
-                </div>
+                <img
+                  src="/about.webp"
+                  alt="Aldana Ingrassia"
+                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
                 <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
             </div>
-          </motion.div> */}
+          </motion.div>
         </div>
       </div>
     </section>
