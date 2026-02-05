@@ -23,9 +23,9 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="container mx-auto ">
-        <div className="max-w-4xl">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden py-24 md:py-16">
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl pb-8 md:pb-0">
           <motion.p
             custom={0}
             variants={textVariants}
@@ -135,15 +135,15 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+        className="absolute bottom-6 md:bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 md:gap-2 text-muted-foreground hover:text-primary transition-colors z-10"
         data-hover
       >
-        <span className="text-xs font-mono">{t("hero.scroll")}</span>
+        <span className="text-xs font-mono hidden sm:block">{t("hero.scroll")}</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}
         >
-          <ArrowDown size={20} />
+          <ArrowDown size={18} className="sm:w-5 sm:h-5" />
         </motion.div>
       </motion.button>
     </section>

@@ -18,7 +18,7 @@ const translations = {
     contact: {
       title: "Contacto",
       subtitle: "Trabajemos juntos",
-      description: "Actualmente estoy abierta a nuevas oportunidades y colaboraciones. Ya sea que tengas una pregunta, una idea de proyecto, o simplemente quieras saludar, mi bandeja de entrada siempre está abierta.",
+      description: "Siempre abierta a nuevas oportunidades y colaboraciones. Ya sea que tengas una pregunta, una idea de proyecto, o simplemente quieras saludar, mi bandeja de entrada siempre está abierta.",
       name: "Nombre",
       email: "Email",
       message: "Mensaje",
@@ -41,7 +41,7 @@ const translations = {
       featured: "Proyecto Destacado",
       aguaraTitle: "Aguara Veterinaria",
       aguaraDesc: "Landing page para una veterinaria que brinda servicios a domicilio en Mendoza, enlace directo a WhatsApp, y descripción de los servicios que se ofrecen. Con diseño moderno y responsive para mobile, tablet y escritorio.",
-      biotechTitle: "Catalogo de laboratorio",
+      biotechTitle: "Catálogo de laboratorio",
       biotechDesc: "Catálogo de productos de laboratorio, con funcionalidades de busqueda, filtrado, y visualizacion de productos. Tiene la opcion de descargar un PDF con las especificaciones de cada producto. Con diseño responsive para mobile, tablet y escritorio."
     },
     hero: {
